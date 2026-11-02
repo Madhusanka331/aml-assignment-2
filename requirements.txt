@@ -1,0 +1,17 @@
+# Tested with Python 3.14
+pandas==3.0.6
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+statsmodels==0.15.0
+imodels==3.0.4
+xgboost==3.4.1
+shap==0.54.1
+lime==0.2.0.1
+matplotlib==3.11.2
+seaborn==0.13.2
+altair==6.3.0
+streamlit==1.65.0
+pyreadr==0.5.8
+requests==2.34.2
+joblib==1.6.0

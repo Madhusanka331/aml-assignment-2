@@ -1,0 +1,39 @@
+rule,type,coef,support,importance,readable,effect
+excess_lag1,linear,0.3301882119247306,1.0,0.3308864150879793,[linear] Last week vs threshold (log ratio),raises risk
+excess_lag1 <= -1.12077,rule,-0.3768370391705268,0.4913233204789933,0.188390147360223,last week <= 33% of outbreak threshold,lowers risk
+log_threshold,linear,-0.1269252596558779,1.0,0.173028676118552,[linear] Outbreak threshold (log),lowers risk
+excess_lag1 <= -0.700177,rule,-0.2921958969417775,0.6559265272985589,0.1388120941727998,last week <= 50% of outbreak threshold,lowers risk
+log_cases_lag2 > 1.86883 and excess_lag1 > -0.419561,rule,0.3187182699673604,0.168002841485691,0.1191588201677513,cases 2 wk ago > 5 AND last week > 66% of outbreak threshold,raises risk
+log_threshold > 1.41473 and excess_lag1 > -0.14205,rule,0.2737959806547723,0.1262431499898518,0.0909339960436551,outbreak threshold > 3 cases AND last week > 87% of outbreak threshold,raises risk
+log_cases_lag2,linear,0.0573832963932856,1.0,0.0858437324077231,[linear] Cases 2 wks ago (log),raises risk
+humidity_lag2 > 78.21429 and excess_lag1 > -0.386768,rule,0.2257238722880074,0.153085041607469,0.0812762714305923,"Humidity (%), 2 wk ago > 78.2 AND last week > 68% of outbreak threshold",raises risk
+log_cases_lag2 > 1.49787 and excess_lag1 > -0.635149,rule,0.1865595454160732,0.2394966511061498,0.079619191423698,cases 2 wk ago > 3 AND last week > 53% of outbreak threshold,raises risk
+week_cos <= -0.85422 and excess_lag1 <= 0.528873 and excess_lag1 > -1.12077,rule,0.2742778001419469,0.0845849401258372,0.0763213787102807,Season (cos) <= -0.9 AND last week <= 170% of outbreak threshold AND last week > 33% of outbreak threshold,raises risk
+log_cases_lag2 > 2.91741 and week_sin > -0.516394 and excess_lag1 > -0.234115,rule,0.2659993022592322,0.0665719504769636,0.0663080966471709,cases 2 wk ago > 17 AND Season (sin) > -0.5 AND last week > 79% of outbreak threshold,raises risk
+log_cases_lag2 > 2.35024 and excess_lag1 > -0.268351,rule,0.203422138477369,0.1174649888370205,0.0654965475481585,cases 2 wk ago > 9 AND last week > 76% of outbreak threshold,raises risk
+excess_lag1 <= 0.0145339,rule,-0.1916514160378381,0.9078546783032272,0.0554315274072591,last week <= 101% of outbreak threshold,lowers risk
+excess_lag1 <= 0.309097,rule,-0.2877874668626497,0.9614877207225492,0.0553787767829064,last week <= 136% of outbreak threshold,lowers risk
+excess_lag1 <= -0.685738,rule,-0.1052642927330404,0.6627257966308098,0.0497667840439804,last week <= 50% of outbreak threshold,lowers risk
+excess_lag1 <= 0.307425,rule,-0.1985233470977948,0.961132535011163,0.0383704008409202,last week <= 136% of outbreak threshold,lowers risk
+log_cases_lag2 > 3.61055 and excess_lag1 > 0.00212836,rule,0.1806680817417689,0.0418104323117515,0.0361617535081681,cases 2 wk ago > 36 AND last week > 100% of outbreak threshold,raises risk
+excess_lag1 <= 0.203414,rule,-0.1572663473537854,0.9463162167647656,0.0354466745920179,last week <= 123% of outbreak threshold,lowers risk
+humidity_lag4 > 76.0 and excess_lag1 > -0.397979,rule,0.0721400530014679,0.1756647046884513,0.0274517894752987,"Humidity (%), 4 wk ago > 76.0 AND last week > 67% of outbreak threshold",raises risk
+temp_c_lag4,linear,-0.0106839315660783,1.0,0.0262290497616599,"[linear] Temp (°C), 4 wk ago",lowers risk
+excess_lag1 <= 0.020091,rule,-0.0910830481289755,0.9093261619646844,0.0261540168128558,last week <= 102% of outbreak threshold,lowers risk
+excess_lag1 <= 0.228819,rule,-0.1122595192372341,0.9500710371422773,0.0244499226665637,last week <= 126% of outbreak threshold,lowers risk
+excess_lag1 <= 0.196844,rule,-0.1005463953220231,0.9452506596306068,0.022873332620074,last week <= 122% of outbreak threshold,lowers risk
+excess_lag1 <= 0.0116291,rule,-0.0737137562140447,0.9074487517759284,0.0213624340999114,last week <= 101% of outbreak threshold,lowers risk
+excess_lag1 <= 0.206244,rule,-0.0820848777513269,0.9466714024761518,0.0184434798638082,last week <= 123% of outbreak threshold,lowers risk
+log_cases_lag2 > 3.41652 and humidity_lag1 > 69.64286 and excess_lag1 > 0.0438407,rule,0.0897777192502334,0.0395778364116095,0.0175035314647375,"cases 2 wk ago > 29 AND Humidity (%), 1 wk ago > 69.6 AND last week > 104% of outbreak threshold",raises risk
+temp_c_lag1,linear,-0.0070292205143366,1.0,0.0172492653765361,"[linear] Temp (°C), 1 wk ago",lowers risk
+excess_lag1 <= 0.0994311,rule,-0.0585493023081647,0.9261213720316622,0.0153149325414743,last week <= 110% of outbreak threshold,lowers risk
+excess_lag1 <= 0.0200065,rule,-0.0412013291242633,0.9093261619646844,0.0118307443235992,last week <= 102% of outbreak threshold,lowers risk
+rain_4wk_sum_lag6,linear,8.358797290411054e-05,1.0,0.0105388141119562,"[linear] Rain, 6-9 wks ago (mm)",raises risk
+temp_c_lag3,linear,-0.0042308217722034,1.0,0.0103863225650787,"[linear] Temp (°C), 3 wk ago",lowers risk
+excess_lag1 <= 0.0168569,rule,-0.0314039161233283,0.9085143089100872,0.0090537037813378,last week <= 102% of outbreak threshold,lowers risk
+excess_lag1 <= -0.660909,rule,-0.0163230942803385,0.6726202557337122,0.0076597282573916,last week <= 52% of outbreak threshold,lowers risk
+excess_lag1 <= 0.019174,rule,-0.026621560087179,0.9090217170692104,0.0076557809721445,last week <= 102% of outbreak threshold,lowers risk
+rain_mm_lag3 > 7.15 and excess_lag1 > -0.294513,rule,0.0141885866699798,0.1441546580069007,0.0049836911819604,"Rain (mm), 3 wk ago > 7.2 AND last week > 74% of outbreak threshold",raises risk
+excess_lag1 <= 0.168834,rule,-0.0175826373498442,0.940379541303024,0.0041632573863322,last week <= 118% of outbreak threshold,lowers risk
+excess_lag1 <= 0.0932271,rule,-0.002862494611184,0.924802110817942,0.0007548695531957,last week <= 110% of outbreak threshold,lowers risk
+excess_lag1 <= 0.222882,rule,-1.5189548995479482e-05,0.9494114065354172,3.328882024343492e-06,last week <= 125% of outbreak threshold,lowers risk

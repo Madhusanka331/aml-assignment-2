@@ -1,0 +1,5 @@
+model,MAE,RMSE,R2,PoissonDev,PI90_coverage
+NegBin (new),12.812,27.943,0.795,8.677,0.935
+LinearReg (log),11.944,26.711,0.813,9.15,
+RandomForest,11.751,26.121,0.821,7.994,
+XGBoost,11.838,26.083,0.822,8.032,

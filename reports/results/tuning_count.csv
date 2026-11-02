@@ -1,0 +1,18 @@
+model,params,val_poisson_dev
+NegBin,alpha=0.005,5.885710057619627
+NegBin,alpha=0.01,5.984488929525467
+NegBin,alpha=0.02,6.105781318963192
+NegBin,alpha=0.05,6.303130583024264
+NegBin,alpha=0.1,6.488866003801037
+NegBin,alpha=0.2,6.719576647497239
+NegBin,alpha=0.5,7.11306225700638
+RandomForest,"{""max_depth"": 8, ""min_samples_leaf"": 5}",6.036278998940791
+RandomForest,"{""max_depth"": 8, ""min_samples_leaf"": 20}",6.046474249114826
+RandomForest,"{""max_depth"": 12, ""min_samples_leaf"": 5}",6.0010187329484985
+RandomForest,"{""max_depth"": 12, ""min_samples_leaf"": 20}",5.998447469752876
+RandomForest,"{""max_depth"": null, ""min_samples_leaf"": 5}",6.038920591157288
+RandomForest,"{""max_depth"": null, ""min_samples_leaf"": 20}",6.000674714682231
+XGBoost,"{""max_depth"": 3, ""learning_rate"": 0.03}",5.772060717625392
+XGBoost,"{""max_depth"": 3, ""learning_rate"": 0.1}",5.7548209847537235
+XGBoost,"{""max_depth"": 5, ""learning_rate"": 0.03}",5.7527011703506465
+XGBoost,"{""max_depth"": 5, ""learning_rate"": 0.1}",5.790964169316395
