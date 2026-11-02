@@ -254,5 +254,3 @@ with st.expander("Model performance, data and limitations", icon=":material/info
         "- **Limitations:** reported cases undercount true infections; 2020–21 reporting was disrupted by "
         "COVID-19; weather at one point per district.")
 
-st.divider()
-st.caption("MSc in AI — Machine Learning assignment · Research prototype, not a public-health decision tool.")
